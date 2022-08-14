@@ -9,7 +9,7 @@ mostrarProductos} = require('../controllers/controller-home');
 
 
 
-router.get('/', inicio);
+router.get('/index', inicio);
 router.get('/addproductos', formcargarProductos);
 router.post('/agregarproductos', cargarProductos);
 

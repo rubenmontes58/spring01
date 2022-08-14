@@ -7,6 +7,7 @@ const inicio = (req, res) => {
     res.render('home');
 }
 
+
 const mostrarProductos = (req, res) => {
     knex.select('*').from('vinos').then(vinos => {
         console.log(vinos);
