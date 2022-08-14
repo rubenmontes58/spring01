@@ -1,0 +1,18 @@
+{
+  "name": "primer-trabajo-node-utn",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "ruben montes",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "knex": "^2.2.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  }
+}

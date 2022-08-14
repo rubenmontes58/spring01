@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zoTr7oTsF6ICutoLaeNguAPUojU8GlIrkA&usqp=CAU);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+   }
