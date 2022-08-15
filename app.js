@@ -16,19 +16,13 @@ hbs.registerPartials(path.join(__dirname, '/views/partials'));
 
 const port = process.env.PORT || 3000;
 const mysql = require('mysql2');
-const homeRouter = require('./routes/router-home');
+const routerHome = require('./routes/router-home');
 const { all } = require('./routes/router-home');
+const { default: knex } = require('knex');
 
 
 
-const connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
-});
-connection.connect();
-console.log('Base de datos conectada');
+
 
 //middelwares
 
@@ -54,7 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use('/', homeRouter);
+app.use('/', routerHome);
 
 
 

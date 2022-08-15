@@ -4,12 +4,13 @@ const {
     inicio,
 cargarProductos,
 formcargarProductos,
-mostrarProductos} = require('../controllers/controller-home');
+mostrarProductos,
+} = require('../controllers/controller-home');
 
 
 
 
-router.get('/index', inicio);
+router.get('/', inicio);
 router.get('/addproductos', formcargarProductos);
 router.post('/agregarproductos', cargarProductos);
 
